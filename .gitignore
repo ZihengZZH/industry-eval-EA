@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# some to ignore
+reference
+example
+industry
+D_W_15K_V2

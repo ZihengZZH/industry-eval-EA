@@ -1,0 +1,12 @@
+{
+    "sample_type": "industry",
+    "source_root_dir": "../benchmark/",
+    "target_root_dir": "../benchmark/example/",
+    "benchmark": ["D_W_15K_V2", "industry"],
+    "train_val_ratio": {
+        "1st": [0.02, 0.01],
+        "2nd": [0.04, 0.02],
+        "3rd": [0.20, 0.10]
+    },
+    "attr_pivots": [5, 2]
+}
