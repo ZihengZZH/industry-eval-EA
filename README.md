@@ -13,10 +13,15 @@ code
 ```
 Specifically, we present a total of **four** settings in extracting biased seed mappings:
 
-* baseline (ideal in 4.2 of our paper)
-* name-biased
-* attribute-biased
-* industry (industrial in 4.2 of our paper)
+* baseline [without any bias]
+  * "Ideal" in 4.2 of our paper
+  * "With No Bias" in 4.3 of our paper
+* name-biased [same name]
+  * "With Name Bias" in 4.3 of our paper
+* attr-biased [more attributes]
+  * "With Attribute Bias" in 4.3 of our paper
+* industry [same name & more attributes]
+  * "Industrial" in 4.2 of our paper
 
 all of which follow the algorithm introduced in 3.2 of our paper.
 
@@ -42,7 +47,7 @@ When sampling biased seed mappings from the public benchmark [D_W_15K_V2](https:
 
 ## Benchmark
 
-We extracted the industry benchmark from two real-world medical KGs for alignment, which can be found [here](./dataset/industry.zip).
+We extracted the industry benchmark, named **MED-BBK-9K**, from two real-world medical KGs for alignment, which can be found [here](./dataset/industry.zip).
 ```
 industry.zip
 |__ attr_triples_1          # attribute triples of KG1
@@ -51,6 +56,15 @@ industry.zip
 |__ rel_triples_1           # relation triples of KG1
 |__ rel_triples_2           # relation triples of KG2
 ```
+
+The statistics of the industry benchmark is listed as follows. [D_W_15K_V2](https://github.com/nju-websoft/OpenEA) is also recorded for the purpose of comparison.
+
+| Benchmark | KGs | #Ents | #Rels | #Rel triples | Rel degree | #Attrs | #Attr triples | Attr degree |
+| --------- | --- | ----- | ----- | ------------ | ---------- | ------ | ------------- | ----------- |
+| MED-BBK-9K | MED | 9,162 | 32 | 158,357 | 34.04 | 19 | 11,467 | 1.24 |
+| MED-BBK-9K | BBK | 9,162 | 20 | 50,307 | 10.96 | 21 | 44,987 | 4.91 |
+| D-W-15K | DBpedia | 15,000 | 167 | 73,983 | 8.55 | 175 | 66,813 | 4.40 |
+| D-W-15K | Wikidata | 15,000 | 121 | 83,365 | 10.31 | 457 | 175,686 | 11.59 |
 
 ### examples
 

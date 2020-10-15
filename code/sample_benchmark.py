@@ -13,7 +13,6 @@ def get_configs(config_file):
     source_root_dir = config['source_root_dir']
     target_root_dir = config['target_root_dir']
     datasets = config['benchmark']
-    # train_val_ratios = [(0.02, 0.01), (0.04, 0.02), (0.20, 0.10)]
     train_val_ratios = [
         config['train_val_ratio']['1st'],
         config['train_val_ratio']['2nd'],
