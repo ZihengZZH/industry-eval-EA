@@ -47,7 +47,7 @@ When sampling biased seed mappings from the public benchmark [D_W_15K_V2](https:
 
 ## Benchmark
 
-We extracted the industry benchmark, named **MED-BBK-9K**, from two real-world medical KGs for alignment, which can be found [here](./dataset/industry.zip).
+We extracted the industry benchmark, named **MED-BBK-9K**, from two real-world medical KGs for alignment, which can be found [here](./benchmark/industry.zip).
 ```
 industry.zip
 |__ attr_triples_1          # attribute triples of KG1
