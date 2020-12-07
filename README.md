@@ -98,3 +98,13 @@ We list some fragments of our industry benchmark as follows.
 If you have any difficulty or question in running code and reproducing experimental results, please email to zihengzhang1025@gmail.com
 
 If you use this model or code, please cite it as follows:
+
+```
+@inproceedings{zhang2020industry,
+  title={An Industry Evaluation of Embedding-based Entity Alignment},
+  author={Zhang, Ziheng and Liu, Hualuo and Chen, Jiaoyan and Chen, Xi and Liu, Bo and Xiang, YueJia and Zheng, Yefeng},
+  booktitle={Proceedings of the 28th International Conference on Computational Linguistics: Industry Track},
+  pages={179--189},
+  year={2020}
+}
+```
