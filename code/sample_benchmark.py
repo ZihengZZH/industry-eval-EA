@@ -57,7 +57,7 @@ def read_rdf(fp):
     """
     read triples in RDF-format
     """
-    with open(fp) as f:
+    with open(fp, 'r', encoding='utf-8') as f:
         lines = f.readlines()
         items = [line.strip().split('\t') for line in lines]
     return items
@@ -67,7 +67,7 @@ def write_rdf(rdf_items, fp):
     """
     write triples in RDF-format
     """
-    with open(fp, 'w') as f:
+    with open(fp, 'w', encoding='utf-8') as f:
         for item in rdf_items:
             if len(item) == 3:
                 item = item[:2]
