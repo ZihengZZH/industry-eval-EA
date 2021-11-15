@@ -1,6 +1,6 @@
 # industry-eval-EA
 
-Source code and benchmark for [COLING'2020](https://coling2020.org/) industry track paper named **An Industry Evaluation of Embedding-based Entity Alignment**
+The code and benchmark of paper _**An Industry Evaluation of Embedding-based Entity Alignment**_ [[arxiv](https://arxiv.org/pdf/2010.11522.pdf)] [[coling](https://aclanthology.org/2020.coling-industry.17.pdf)] in Proceedings of COLING 2020.
 
 ## Code
 
